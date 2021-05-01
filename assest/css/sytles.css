@@ -8,15 +8,26 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     background-color: silver;
-    color: var(--main-color);
+   /* color: var(--main-color);*/
 }
 
 /* Global Sytles Start*/
 :root {
     --main-color: rgb(1, 100, 100);
-    --secondary-color: rgb(11, 70, 78);
+    --secondary-color: rgba(192, 192, 192, 0.651);
     --tertiary-color: rgb(29, 29, 29);
-    --secondary-text: silver;
+}
+
+.titles {
+    padding-bottom: 100px;
+    width: 30%;
+}
+
+.titles h2 {
+    font-size: 50px;
+    padding: 0 50px;
+    text-align: right;
+    color: var(--main-color);
 }
 
 /* Global Styles End */
@@ -31,17 +42,20 @@ header {
 }
 
 header h1 {
-    text-shadow: 1px 3px 10px rgba(0, 0, 0, .75);
     font-size: 55px;
-    padding: 15px 15px;
+    margin: 15px 30px;
+    padding: 5px 10px;
     font-weight: bold;
     margin-left: 30px;
 }
 
 header a {
+    color: var(--main-color);
+}
+
+header a {
     font-style: normal;
     text-decoration: none;
-    color: var(--main-color);
 }
 
 header ul {
@@ -54,33 +68,28 @@ header ul li {
     font-size: 120%;
     text-shadow: 1px 2px 5px rgba(0, 0, 0, .75);
 }
-
 /* Header Section Ends */
 
 /* Hero Starts*/
 .hero {
-    background-image: url("../images/hero.jpg");
-    background-size: auto;
-    background-position: right;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    padding: 193px 0;
-
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: right;
 }
 
 .hero div {
-    background:  var(--tertiary-color);
+    background:  var(--secondary-color);
     align-items: bottom;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, .75);
     border-radius: 5px;
-    position: relative;
-    margin: 0 50px;
-    
+    margin: 200px 35px 30px 0;
 }
 
 .hero div p {
-    color: var(--color-text-main);
+    color: var(--tertiary-color);
     font-size: 30px;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, .75);
     padding: 5px 10px;
@@ -99,16 +108,6 @@ header ul li {
     align-items: center;
 }
 
-.about-me h2 {
-    font-size: 35px;
-    padding: 15px 50px;
-}
-
-.about-me-title {
-    padding-bottom: 100px;
-    width: 30%;
-}
-
 .about-me article {
     border-left: 4px solid var(--main-color);
     color: var(--tertiary-color);
@@ -118,7 +117,41 @@ header ul li {
 
 .about-me p {
     color: var(--tertiary-color);
-    margin: 50px 30px;
+    margin: 0 30px 50px 10px;
     padding: 25px;
 }
 /* About Me Ends*/
+
+/* Projects Section Starts */
+.projects {
+    margin: 20px 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 5000px;
+}
+
+.project-items {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0;
+    border-left: 4px solid var(--main-color);
+}
+.main-project {
+    width: 65%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 25px;
+    margin: 0 30px 50px 10px;
+}
+
+.main-project a img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
