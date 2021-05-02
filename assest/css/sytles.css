@@ -16,6 +16,7 @@ body {
     --main-color: rgb(1, 100, 100);
     --secondary-color: rgba(192, 192, 192, 0.651);
     --tertiary-color: rgb(29, 29, 29);
+    --forth-color: rgb(153, 226, 226);
 }
 
 .titles {
@@ -93,7 +94,6 @@ header ul li {
     font-size: 30px;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, .75);
     padding: 5px 10px;
-
 }
 
 /* Hero Ends */
@@ -130,7 +130,11 @@ header ul li {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 5000px;
+}
+
+.projects a {
+    font-style: normal;
+    text-decoration: none;
 }
 
 .project-items {
@@ -142,16 +146,45 @@ header ul li {
     border-left: 4px solid var(--main-color);
 }
 .main-project {
-    width: 65%;
-    display: flex;
-    justify-content: flex-start;
-    padding: 25px;
-    margin: 0 30px 50px 10px;
-}
-
-.main-project a img {
     width: 100%;
-    margin: 0 auto;
+    margin: 10px 30px;
+    display: flex;
+    flex-flow: row nowrap;
 }
 
+.main-project-img,
+.project-tag {
+    box-sizing: border-box;
+    width: 100%;
+    flex: none;
+}
 
+.main-project-img img {
+    width:95%;
+    border: 5px solid var(--main-color);
+}
+
+.project-tag {
+    background: var(--main-color);
+    margin-top: 38%;
+    width: auto;
+    text-align: left;
+    margin-left: -100%;
+    height: fit-content;
+}
+
+.project-tag h3 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--tertiary-color);
+    padding: 10px 10px 10px 15px
+}
+
+.project-tag p {
+    font-size: 15px;
+    text-align: center;
+    font-weight: lighter;
+    color: var(--tertiary-color);
+    padding-bottom: 10px;
+}
