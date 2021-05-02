@@ -21,14 +21,13 @@ body {
 
 .titles {
     width: 30%;
-    margin: 15px 0;
-    padding-bottom: 100px;
 }
 
 .titles h2 {
     font-size: 3.7vw;
-    padding: 0 25px;
+    padding: 0 25px 0 0;
     text-align: right;
+    margin: 20px 0;
     color: var(--main-color);
 }
 
@@ -90,7 +89,7 @@ header nav ul li {
 
 .hero div p {
     color: var(--tertiary-color);
-    font-size: 40px;
+    font-size: 3.5vw;
     padding: 5px 10px;
     font-weight: bold;
 }
@@ -129,6 +128,9 @@ header nav ul li {
     justify-content: flex-start;
 }
 
+.projects h2 {
+    margin-top: 40px;
+}
 .projects a {
     font-style: normal;
     text-decoration: none;
@@ -140,6 +142,7 @@ header nav ul li {
     flex-wrap: wrap;
     justify-content: flex-start;
     margin: 30px 0;
+    padding: 10px 0;
     border-left: 4px solid var(--main-color);
 }
 
@@ -245,7 +248,7 @@ header nav ul li {
     font-weight: bold;
     text-align: center;
     color: var(--tertiary-color);
-    padding: 10px 10px 10px 15px
+    padding: 10px 10px 3px 15px
 }
 
 .project-tag-smaller p {
@@ -268,7 +271,7 @@ header nav ul li {
 }
 
 .contact-info {
-    width: 70%;
+    width: 69%;
     display: flex;
     justify-content: flex-start;
     border-left: 4px solid var(--main-color);
@@ -282,7 +285,7 @@ header nav ul li {
 .contact-info ul li {
     display: inline;
     border-bottom: 3px solid var(--main-color);
-    margin: 30px 25px;
+    margin: 30px 15px;
 }
 
 .contact-info ul li a {
@@ -296,3 +299,114 @@ header nav ul li {
     margin: auto 0;
 }
 /* Contact Me Section End */
+
+/* Media Queries Start */
+
+@media screen and (max-width: 980px) {
+    header nav ul li {
+        font-size: 2.5vw;
+    }
+
+    .about-me article {
+        font-size: 2vw;
+    }
+
+    .contact-info ul li {
+        margin: 30px 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .titles {
+        width: 20%;
+    }
+
+    .titles h2 {
+        text-align: center;
+    }
+
+    .about-me article {
+        font-size: 2.5vw;
+        width: 80%;
+    }
+
+    .project-items {
+        width: 80%;
+    }
+
+    .project-tag h3 {
+        font-size: 3vw;
+       padding: 5px 10px 3px 15px
+    }
+
+    .project-tag p {
+        padding-bottom: 5px;
+        font-size: 2vw;
+    }
+
+    .project-tag-smaller h3 {
+        padding: 5px 10px 3px 15px;
+        font-size: 2.5vw;
+    }
+
+    .project-tag-smaller p {
+        padding-bottom: 5px;
+        font-size: 1.5vw;
+    }
+    .contact h2 {
+        padding: 0 10px 0 15px;
+    }
+
+    .contact-info {
+        width: 77%;
+    }
+
+    .contact-info ul li {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .contact-info ul li a {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    header {
+        justify-content:   center;
+    }
+
+    header h1 {
+        font-size: 5vw;
+    }
+
+    header ul {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    header ul li a {
+        font-size: 3.3vw;
+    }
+
+    .hero div p {
+        font-size: 4vw;
+    }
+
+    .about-me article {
+        font-size: 3vw;
+    }
+
+    .main-project-img img,
+    .sub-project-img img {
+        border: 4px solid var(--forth-color);
+    }
+
+    .project-tag {
+        margin-top: 35%;
+    }
+    .project-tag-smaller {
+        margin-top: 27%;
+    }
+}
