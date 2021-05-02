@@ -170,7 +170,6 @@ header nav ul li a:active {
     margin: 10px 0 10px 25px;
     display: flex;
     flex-flow: row nowrap;
-    
 }
 
 .main-project-img,
@@ -184,7 +183,6 @@ header nav ul li a:active {
     width:95%;
     border: 8px solid var(--forth-color);
     border-radius: 5px;
-    
 }
 /* Project Main Link Ends*/
 
@@ -197,7 +195,7 @@ header nav ul li a:active {
     margin-left: -100%;
     height: fit-content;
     box-shadow: 1px 5px 10px rgba(0, 0, 0, .75);
-    
+    z-index: 1;
 }
 
 .project-tag h3 {
@@ -256,7 +254,7 @@ header nav ul li a:active {
     margin-left: -100%;
     height: fit-content;
     box-shadow: 1px 5px 10px rgba(0, 0, 0, .75);
-    
+    z-index: 1;
 }
 
 .project-tag-smaller h3 {
