@@ -138,7 +138,7 @@ header nav ul li {
     width: 70%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 30px 0;
     border-left: 4px solid var(--main-color);
 }
@@ -146,7 +146,7 @@ header nav ul li {
 /* Projects Main Link*/
 .main-project {
     width: 100%;
-    margin: 10px 30px;
+    margin: 10px 0 10px 30px;
     display: flex;
     flex-flow: row nowrap;
 }
@@ -196,13 +196,67 @@ header nav ul li {
 }
 /* Project Item Tag Styles End */
 
-
+/* Sub Projects Start */
 .sub-project-items {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
 }
+
+.sub-project-items a {
+    width: 49%;
+}
+
+.sub-project {
+    width: 100%;
+    margin: 10px 24px 10px 30px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.sub-project-img,
+.project-tag-smaller {
+    box-sizing: border-box;
+    width: 100%;
+    flex: none;
+}
+
+.sub-project-img img {
+    width:95%;
+    border: 8px solid var(--forth-color);
+    border-radius: 5px;
+    z-index: 1;
+}
+/* Smaller Project Tags */
+.project-tag-smaller {
+    background: var(--forth-color);
+    margin-top: 32%;
+    width: auto;
+    text-align: left;
+    margin-left: -100%;
+    height: fit-content;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, .75);
+    
+}
+
+.project-tag-smaller h3 {
+    font-size: 1.9vw;
+    font-weight: bold;
+    text-align: center;
+    color: var(--tertiary-color);
+    padding: 10px 10px 10px 15px
+}
+
+.project-tag-smaller p {
+    font-size: 1.3vw;
+    text-align: center;
+    font-weight: lighter;
+    color: var(--tertiary-color);
+    padding: 0 10px;
+    padding-bottom: 10px;
+}
+/* Smaller Project Tags End */
 /* Projects Section End */
 
 /* Contact Me Section Starts */
