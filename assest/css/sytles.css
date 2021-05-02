@@ -52,12 +52,9 @@ header h1 {
 }
 
 header a {
-    color: var(--main-color);
-}
-
-header a {
     font-style: normal;
     text-decoration: none;
+    color: var(--main-color);
 }
 
 header ul {
@@ -106,13 +103,12 @@ header ul li {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: center;
 }
 
 .about-me article {
     border-left: 4px solid var(--main-color);
     color: var(--tertiary-color);
-    font-size: 20px;
+    font-size: 1.5vw;
     width: 70%
 }
 
@@ -130,7 +126,6 @@ header ul li {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: center;
 }
 
 .projects a {
@@ -180,7 +175,7 @@ header ul li {
 }
 
 .project-tag h3 {
-    font-size: 30px;
+    font-size: 1.7vw;
     font-weight: bold;
     text-align: center;
     color: var(--tertiary-color);
@@ -188,7 +183,7 @@ header ul li {
 }
 
 .project-tag p {
-    font-size: 15px;
+    font-size: 1vw;
     text-align: center;
     font-weight: lighter;
     color: var(--tertiary-color);
@@ -202,4 +197,42 @@ header ul li {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+}
+/* Projects Section End */
+
+/* Contact Me Section Starts */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.contact-info {
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    border-left: 4px solid var(--main-color);
+    padding: 50px 20px;
+    margin: 0 auto;
+}
+
+.contact-info ul {
+    margin: 0 auto;
+}
+.contact-info ul li {
+    display: inline;
+    border-bottom: 3px solid var(--main-color);
+    margin: 30px 25px;
+}
+
+.contact-info ul li a {
+    font-size: 1.7vw;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    color: var(--tertiary-color);
+    padding: 15px 5px;
+    margin: auto 0;
 }
