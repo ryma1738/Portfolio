@@ -17,7 +17,7 @@ body {
     --secondary-color: rgba(192, 192, 192, 0.75);
     --tertiary-color: rgb(29, 29, 29);
     --forth-color: rgb(54, 129, 129);
-    --image-overlay: rgb(54, 129, 129);
+    --image-overlay: rgba(54, 129, 129, .75);
 }
 
 .titles {
@@ -183,18 +183,12 @@ header nav ul li a:active {
     width:95%;
     border: 8px solid var(--forth-color);
     border-radius: 5px;
-}
-
-
-.main-project-img:hover { 
-    background: border-box var(--image-overlay);
-    background-size: 95% 99%; 
+     opacity: .85; 
 }
 
 .main-project-img img:hover {
-    opacity: .25;
+    opacity: 1;
 }
-
 /* Project Main Link Ends*/
 
 /* Project Item Tags Sytles*/
@@ -206,7 +200,7 @@ header nav ul li a:active {
     margin-left: -100%;
     height: fit-content;
     box-shadow: 1px 5px 10px rgba(0, 0, 0, .75);
-    opacity: 1;
+    z-index: 1;
 }
 
 .project-tag h3 {
