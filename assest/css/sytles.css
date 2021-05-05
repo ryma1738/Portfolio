@@ -17,7 +17,7 @@ body {
     --secondary-color: rgba(192, 192, 192, 0.75);
     --tertiary-color: rgb(29, 29, 29);
     --forth-color: rgb(54, 129, 129);
-    --image-overlay: rgba(54, 129, 129, .75);
+    --image-overlay: rgb(54, 129, 129);
 }
 
 .titles {
@@ -184,6 +184,17 @@ header nav ul li a:active {
     border: 8px solid var(--forth-color);
     border-radius: 5px;
 }
+
+
+.main-project-img:hover { 
+    background: border-box var(--image-overlay);
+    background-size: 95% 99%; 
+}
+
+.main-project-img img:hover {
+    opacity: .25;
+}
+
 /* Project Main Link Ends*/
 
 /* Project Item Tags Sytles*/
@@ -195,7 +206,7 @@ header nav ul li a:active {
     margin-left: -100%;
     height: fit-content;
     box-shadow: 1px 5px 10px rgba(0, 0, 0, .75);
-    z-index: 1;
+    opacity: 1;
 }
 
 .project-tag h3 {
@@ -243,7 +254,6 @@ header nav ul li a:active {
     width:95%;
     border: 8px solid var(--forth-color);
     border-radius: 5px;
-    z-index: 1;
 }
 /* Smaller Project Tags */
 .project-tag-smaller {
@@ -254,7 +264,6 @@ header nav ul li a:active {
     margin-left: -100%;
     height: fit-content;
     box-shadow: 1px 5px 10px rgba(0, 0, 0, .75);
-    z-index: 1;
 }
 
 .project-tag-smaller h3 {
@@ -311,6 +320,14 @@ header nav ul li a:active {
     color: var(--tertiary-color);
     padding: 15px 5px;
     margin: auto 0;
+}
+
+.contact-info ul li:hover{
+    border-bottom: 5px solid var(--forth-color);
+}
+
+.contact-info ul li:active {
+    border-color: var(--secondary-color);
 }
 /* Contact Me Section End */
 
